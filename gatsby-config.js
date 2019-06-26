@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `yeobi.io`,
+    title: `im-yeobi.io`,
     author: `Jongyeob Kim`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
