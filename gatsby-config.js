@@ -3,10 +3,9 @@ module.exports = {
     title: `im-yeobi.io`,
     author: `Jongyeob Kim`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://im-yeobi.netlify.com/`,
     social: {
       github: `im-yeobi`
-      // twitter: `kylemathews`,
 
     },
   },
@@ -76,5 +75,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-sass`,
   ],
 }
