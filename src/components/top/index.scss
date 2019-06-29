@@ -1,0 +1,42 @@
+.top {
+  // position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: #F8F8F8;
+  // background: $theme-gradient;
+  .menu {
+    width: 35px;
+    height: 35px;
+    background-image: url(../../../content/assets/menu-icon.png);
+    background-size: 35px 35px;
+    background-color: transparent;
+    border: 0 none;
+    opacity: 0.6;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  .link {
+    display: inline-block;
+    font-size: 28px;
+    // color: $top-header-text-color;
+    // color: #ffffff;
+    color: black;
+    opacity: 0.7;
+    font-family: 'Catamaran';
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: none;
+    margin-left: 15px;
+  }
+}
+
+// .top-border-bottom {
+  // position: sticky;
+  // position: -webkit-sticky;
+  // top: 0px;
+  // height: 8px;
+  // background: $theme-gradient;
+  // z-index: 2;
+// }

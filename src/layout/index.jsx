@@ -3,7 +3,11 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-class Layout extends React.Component {
+import { Top } from "../components/top"
+
+// import menuIcon from "../content/assets/menu-icon.png"
+
+export class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
@@ -52,22 +56,36 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div
+      <React.Fragment>
+      <Top title={title} location={location} rootPath={rootPath} />
+
+      {/* <div
         style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          width: `100%`,
+          height: `120px`,
+          backgroundColor: `#F8F8F8`,
         }}
-      >
-        <header>{header}</header>
-        <main>{children}</main>
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
-      </div>
+      > */}
+
+        {/* <header>{header}</header> */}
+        <div
+          style={{
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            maxWidth: rhythm(24),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          }}
+        >
+
+          <main>{children}</main>
+          <footer style={{ fontSize: `12px` }}>
+            © <a href="https://github.com/im-yeobi">im-yeobi</a>, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+        </div>
+      {/* </div> */}
+      </React.Fragment>
     )
   }
 }
