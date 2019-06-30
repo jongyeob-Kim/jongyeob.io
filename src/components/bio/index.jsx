@@ -11,6 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import { rhythm } from "../../utils/typography"
 
+import './index.scss'
+
 export const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -34,33 +36,42 @@ export const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      {/* <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      /> */}
-      <p>
-        <strong>{author}</strong>
-        {` `}
-        <a href={`https://github.com/${social.github}`}>
-          github
-        </a>
-      </p>
+    // <div
+    //   style={{
+    //     display: `flex`,
+    //     marginBottom: rhythm(2.5),
+    //   }}
+    // >
+    //   <Image
+    //     fixed={data.avatar.childImageSharp.fixed}
+    //     alt={author}
+    //     style={{
+    //       marginRight: rhythm(1 / 2),
+    //       marginBottom: 0,
+    //       minWidth: 50,
+    //       borderRadius: `100%`,
+    //     }}
+    //     imgStyle={{
+    //       borderRadius: `50%`,
+    //     }}
+    //   />
+
+    <div className="bio">
+      <div className="author-image">
+      </div>
+      <div className="author-info">
+        <a className="author-name"><strong>{author}</strong></a>
+        <div className="author-description">
+          Back-end developer.
+        </div>
+        <p>
+          <a className="author-social" href={`https://github.com/${social.github}`}>
+            GitHub
+          </a>
+        </p>
+      </div>
     </div>
+    // </div>
   )
 }
 
