@@ -10,11 +10,13 @@ export const Top = ({ title, location, rootPath }) => {
   return (
     <>
       <div className="top">
-        <button className="menu"></button>
-        <Link to={`/`} className="link">
-          {title}
-        </Link>
-        <GitHubIcon />
+        {/* <button className="menu"></button> */}
+        <div className="top-item">
+          <Link to={`/`} className="link">
+            {title}
+          </Link>
+        {/* <GitHubIcon /> */}
+        </div>
       </div>
       {/* <div className="top-border-bottom" /> */}
     </>

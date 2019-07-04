@@ -37,5 +37,5 @@ IDC를 운영하고 서버를 관리하는 노력과 비용을 절감하여, 비
 ````
 ---
 
-#### Reference.
+**Reference.**
 > [아마존 웹 서비스를 다루는 기술](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=46766285)

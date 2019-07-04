@@ -1,10 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale } from '../utils/typography'
 
-import { Top } from "../components/top"
-import { Header } from "../components/header"
+import { Top } from '../components/top'
+import { Header } from '../components/header'
+import { Footer } from '../components/footer'
 
 // import menuIcon from "../content/assets/menu-icon.png"
 
@@ -59,24 +60,35 @@ export class Layout extends React.Component {
     return (
       <React.Fragment>
         <Top title={title} location={location} rootPath={rootPath} />
-        <Header title={title} location={location} rootPath={rootPath} />
+        
 
         <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(25),
+            maxWidth: rhythm(40),
             // padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
+          <Header title={title} location={location} rootPath={rootPath} />
+          {/* <Nav location={location} rootPath={rootPath} /> */}
+          <div>
+          
 
-          <main>{children}</main>
-          <footer style={{ fontSize: `12px` }}>
-            © <a href="https://github.com/im-yeobi">im-yeobi</a>, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <main
+            style={{
+              // float: `left`,
+              maxWidth: rhythm(25),
+              margin: `0 auto`,
+              fontFamily: `Noto sans`
+            }}
+          >
+            {children}
+          </main>
+          </div>
         </div>
+
+        <Footer />
       </React.Fragment>
     )
   }

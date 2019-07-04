@@ -10,8 +10,16 @@ export const Header = ({ title, location, rootPath }) => {
   return (
     isRoot && (
       <header className="header">
-        <Bio>
-        </Bio>
+        <nav className="nav">
+          <div className="nav-content">
+            <a>Overview</a>
+            <a>spring</a>
+            <a>aws</a>
+            <a>git</a>
+            <a>essay</a>
+            <a>etc</a>
+          </div>
+        </nav>
       </header>
     )
   )
