@@ -23,6 +23,11 @@ blockquote {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0.8rem;
+  border-left: 4px solid hsla(0,0%,0%,0.13);
+  color: #999;
 
   p {
     margin-bottom: 0;
@@ -31,12 +36,16 @@ blockquote {
   }
   
   ul {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 
     li {
       margin-bottom: 0;
     }
   }
+}
+
+h1, h2, h3 {
+  font-family: "Noto sans"
 }
 
 code[class*="language-"],

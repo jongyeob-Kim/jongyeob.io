@@ -73,18 +73,19 @@ export class Layout extends React.Component {
           <Header title={title} location={location} rootPath={rootPath} />
           {/* <Nav location={location} rootPath={rootPath} /> */}
           <div>
-          
 
-          <main
-            style={{
-              // float: `left`,
-              maxWidth: rhythm(25),
-              margin: `0 auto`,
-              fontFamily: `Noto sans`
-            }}
-          >
-            {children}
-          </main>
+            <main
+              style={{
+                // float: `left`,
+                maxWidth: rhythm(25),
+                margin: `0 auto`,
+                fontFamily: `Noto sans`,
+                paddingLeft: `15px`,
+                paddingRight: `15px`,
+              }}
+            >
+              {children}
+            </main>
           </div>
         </div>
 

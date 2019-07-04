@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <div style={{ fontFamily:`Noto sans` }}>
+        <div style={{ fontFamily:`Noto sans`, paddingLeft: `15px`, paddingRight: `15px` }}>
           <h1>{post.frontmatter.title}</h1>
           <p
             style={{
@@ -33,7 +33,9 @@ class BlogPostTemplate extends React.Component {
           >
             {post.frontmatter.date}
           </p>
+          
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          
           <hr
             style={{
               marginBottom: rhythm(1),
