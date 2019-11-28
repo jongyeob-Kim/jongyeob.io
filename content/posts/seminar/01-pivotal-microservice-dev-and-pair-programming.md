@@ -4,7 +4,7 @@ date: "2019-09-30T20:17"
 template: "post"
 draft: false
 slug: "/posts/seminar/01_pivotal_microservice_development_and_pair_programming/"
-category: "Seminar"
+category: "세미나"
 tags:
   - "Spring Boot"
   - "Pivotal"
