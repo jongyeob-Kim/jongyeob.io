@@ -14,7 +14,7 @@ const Author = () => {
         <strong>{author.name}</strong> on
         <a
           className={styles['author__bio-github']}
-          href={getContactHref('github', author.contacts.twitter)}
+          href={getContactHref('github', author.contacts.github)}
           rel="noopener noreferrer"
           target="_blank"
         >
