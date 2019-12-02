@@ -1,9 +1,9 @@
 ---
-title: "[마이크로서비스 따라하기 꿀밋업 시리즈 3탄] - Spring Boot를 사용한 마이크로서비스 개발과 페어 프로그래밍 데모"
+title: "[마이크로서비스 따라하기 꿀밋업 시리즈 3탄] Spring Boot를 사용한 마이크로서비스 개발과 페어 프로그래밍 데모"
 date: "2019-09-30T20:17"
 template: "post"
 draft: false
-slug: "/posts/seminar/01_pivotal_microservice_development_and_pair_programming/"
+slug: "/posts/seminar/01-pivotal-microservice-development-and-pair-programming/"
 category: "세미나"
 tags:
   - "Spring Boot"
