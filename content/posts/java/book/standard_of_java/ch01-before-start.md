@@ -3,7 +3,7 @@ title: "[자바의 정석] Chapter 01. 자바를 시작하기 전에"
 date: "2019-12-04T22:38"
 template: "post"
 draft: false
-slug: "/posts/java/book/standard_of_java/ch01-before-start/"
+slug: "/posts/java/book/standard-of-java/ch01-before-start/"
 category: "Java"
 tags:
   - "Java"
@@ -11,10 +11,6 @@ tags:
 description: "자바의 가장 큰 특징은 운영체제에 독립적이라는 것이다. 자바로 작성된 프로그램은 운영체제의 종류에 관계없이 실행 가능하다."
 socialImage: "/media/03-jvm.png"
 ---
-
-# Chapter 06. 자바를 시작하기 전에
-
-
 
 ## 1. 자바 (Java Programming Language)
 
