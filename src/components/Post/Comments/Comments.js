@@ -1,38 +1,28 @@
+// @flow strict
 import React from 'react';
+import ReactDisqusComments from 'react-disqus-comments';
+import { useSiteMetadata } from '../../../hooks';
 
-class Comments extends React.Component {
-  constructor(props) {
-    super(props);
+type Props = {
+  postTitle: string,
+  postSlug: string
+};
 
-    this.commentsEl = React.createRef();
-    this.state = { status: 'pending' };
+const Comments = ({ postTitle, postSlug }: Props) => {
+  const { url, disqusShortname } = useSiteMetadata();
+
+  if (!disqusShortname) {
+    return null;
   }
 
-  componentDidMount() {
-    const scriptEl = document.createElement('script');
-    scriptEl.onload = () => this.setState({ status: 'success' });
-    scriptEl.onerror = () => this.setState({ status: 'failed' });
-    scriptEl.async = true;
-    scriptEl.src = 'https://utteranc.es/client.js';
-    scriptEl.setAttribute('repo', 'im-yeobi/Blog-comments');
-    scriptEl.setAttribute('issue-term', 'title');
-    scriptEl.setAttribute('label', 'Comment');
-    scriptEl.setAttribute('theme', 'github-light');
-    scriptEl.setAttribute('crossorigin', 'anonymous');
-    this.commentsEl.current.appendChild(scriptEl);
-  }
-
-  render() {
-    const { status } = this.state;
-
-    return (
-      <div className="comments-wrapper">
-        {status === 'failed' && <div>Error. Please try again.</div>}
-        {status === 'pending' && <div>Loading script...</div>}
-        <div ref={this.commentsEl} />
-      </div>
-    );
-  }
-}
+  return (
+    <ReactDisqusComments
+      shortname={disqusShortname}
+      identifier={postTitle}
+      title={postTitle}
+      url={url + postSlug}
+    />
+  );
+};
 
 export default Comments;
