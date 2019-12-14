@@ -8,7 +8,7 @@ category: "Git"
 tags:
   - "Git"
   - "Github"
-  - "잔디"
+  - "Github 잔디"
 description: "커밋은 분명 남겼고, 푸시도 잘만 동작하는데 대체 왜 잔디가 채워지지 않는걸까?"
 ---
 
