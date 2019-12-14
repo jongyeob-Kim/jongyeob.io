@@ -19,10 +19,14 @@ module.exports = {
       label: 'About me',
       path: '/pages/about'
     },
-    // {
-    //   label: 'Contact me',
-    //   path: '/pages/contacts'
-    // }
+    {
+      label: 'Category',
+      path: '/category'
+    },
+    {
+      label: 'Tag',
+      path: '/tag'
+    }
   ],
   author: {
     name: 'yeobi',
