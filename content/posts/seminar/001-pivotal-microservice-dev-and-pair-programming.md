@@ -3,7 +3,7 @@ title: "[마이크로서비스 따라하기 꿀밋업 시리즈 3탄] Spring Boo
 date: "2019-09-30T20:17"
 template: "post"
 draft: false
-slug: "/posts/seminar/01-pivotal-microservice-development-and-pair-programming/"
+slug: "/posts/seminar/001-pivotal-microservice-development-and-pair-programming/"
 category: "세미나"
 tags:
   - "Spring Boot"
@@ -13,7 +13,7 @@ description: "Pivotal Spring Boot 밋업 시리즈 3탄. Spring Boot를 사용�
 socialImage: "/media/01-seminar-pivotal-1.png"
 ---
 
-![Pivotal Spring Boot 밋업 시리즈 3탄](/media/01-seminar-pivotal-1.png)
+![Pivotal Spring Boot 밋업 시리즈 3탄](/media/001-seminar-pivotal-1.png)
 
 페이스북 이노베이션 랩의 밋업에 다녀와 세미나 내용을 정리했습니다. 테스트 코드, 페어 프로그래밍 등 다른 개발자분들이 관심 가지실 만한 내용이 많아 공유합니다.
 

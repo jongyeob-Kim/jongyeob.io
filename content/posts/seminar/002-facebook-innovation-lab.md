@@ -3,7 +3,7 @@ title: "[페이스북 이노베이션 랩] 개발자 커리어 로드맵"
 date: "2019-11-15T19:30"
 template: "post"
 draft: false
-slug: "/posts/seminar/02-facebook-innovation-lab-career-roadmap/"
+slug: "/posts/seminar/002-facebook-innovation-lab-career-roadmap/"
 category: "세미나"
 tags:
   - "페이스북 이노베이션랩"
@@ -11,8 +11,8 @@ description: "페이스북 이노베이션 랩에서 진행한 개발자 커리�
 socialImage: "/media/02-seminar-facebook-1.png"
 ---
 
-![페이스북 이노베이션 랩](/media/02-seminar-facebook-1.png)
-![페이스북 이노베이션 랩 세션](/media/02-seminar-facebook-2.png)
+![페이스북 이노베이션 랩](/media/002-seminar-facebook-1.png)
+![페이스북 이노베이션 랩 세션](/media/002-seminar-facebook-2.png)
 
 [페이스북 이노베이션 랩](https://www.facebook.com/innovationlabkorea/)에서 진행한 개발자 커리어 로드맵 세미나에 다녀와서 기록한 내용을 공유하고자 포스팅 합니다.
 

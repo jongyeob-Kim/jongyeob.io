@@ -3,7 +3,7 @@ title: "클린 코더를 읽고"
 date: "2019-11-20T11:50"
 template: "post"
 draft: false
-slug: "/posts/book/01-the-clean-coder/"
+slug: "/posts/book/001-the-clean-coder/"
 category: "개발 서적"
 tags:
   - "Robert C. Martin"

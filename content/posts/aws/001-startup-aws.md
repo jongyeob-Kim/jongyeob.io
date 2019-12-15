@@ -3,7 +3,7 @@ title: "스타트업은 왜 AWS 클라우드 컴퓨팅을 사용하는가?"
 date: "2019-07-02T23:30"
 template: "post"
 draft: false
-slug: "/posts/aws/01-startup-aws/"
+slug: "/posts/aws/001-startup-aws/"
 category: "AWS"
 tags:
   - "AWS"
