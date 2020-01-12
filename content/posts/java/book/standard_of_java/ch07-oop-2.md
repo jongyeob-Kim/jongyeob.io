@@ -20,17 +20,21 @@ description: "직접적인 관계의 두 클래스는 한 쪽(Provider)이 변�
 <br />
 상속을 통해서 클래스를 작성하면 적은 양의 코드로 새로운 클래스를 작성할 수 있고, 코드를 공통적으로 관리할 수 있기 때문에 코드의 추가 및 변경이 매우 용이하다. 
 
-    조상 클래스 — 부모(parent)클래스, 상위(super)클래스, 기반(base)클래스
-    자손 클래스 — 자식(child)클래스, 하위(sub)클래스, 파생된(derived)클래스
-    
-    - 생성자와 초기화 블럭은 상속되지 않는다. 멤버만 상속된다.
-    - 자손 클래스의 멤버 개수는 조상 클래스보다 항상 같거나 많다.
+```
+조상 클래스 — 부모(parent)클래스, 상위(super)클래스, 기반(base)클래스
+자손 클래스 — 자식(child)클래스, 하위(sub)클래스, 파생된(derived)클래스
+
+- 생성자와 초기화 블럭은 상속되지 않는다. 멤버만 상속된다.
+- 자손 클래스의 멤버 개수는 조상 클래스보다 항상 같거나 많다.
+```
 
 #### Q. private 접근제어자로 지정된 멤버는 상속되지 않지 않나 ?
 
 > 접근제어자가 private 또는 default인 멤버들은 상속되지 않는다기보다 상속은 받지만 자손 클래스로부터의 `접근이 제한`되는 것이다.
 
-    자손 클래스의 인스턴스를 생성하면 조상 클래스의 멤버와 자손 클래스의 멤버가 합쳐진 하나의 인스턴스로 생성된다.
+```
+자손 클래스의 인스턴스를 생성하면 조상 클래스의 멤버와 자손 클래스의 멤버가 합쳐진 하나의 인스턴스로 생성된다.
+```
 
 ### 1.2 클래스간의 관계 - 포함관계
 
@@ -41,18 +45,22 @@ description: "직접적인 관계의 두 클래스는 한 쪽(Provider)이 변�
 
 ### 1.3 클래스간의 관계 결정하기
 
-    원(Circle)은 점(Point)이다. — Circle is a Point
-    원(Circle)은 점(Point)을 가지고 있다 — Circle has a Point
-    
-    상속관계 : '~은 ~이다. (is-a)'
-    포함관계 : '~은 ~을 가지고 있다. (has-a)'
+```
+원(Circle)은 점(Point)이다. — Circle is a Point
+원(Circle)은 점(Point)을 가지고 있다 — Circle has a Point
+
+상속관계 : '~은 ~이다. (is-a)'
+포함관계 : '~은 ~을 가지고 있다. (has-a)'
+```
 
 참조변수의 출력이나 덧셈연산자를 이용한 참조변수와 문자열의 결합에는 `toString`이 자동적으로 호출되어 참조변수를 문자열로 대치한 후 처리한다.
-
+<br />
 toString() 메서드는 모든 클래스의 조상인 Object 클래스에 정의되어 있다.
 
-    참조변수 card
-    System.out.println(card) == System.out.println(card.toString());
+```
+참조변수 card
+System.out.println(card) == System.out.println(card.toString());
+```
 
 
 ### 1.4 단일 상속 (single inheritance)
@@ -70,7 +78,7 @@ toString() 메서드는 모든 클래스의 조상인 Object 클래스에 정의
 
 #### 단일 상속 장점
 
-> 클래스 간의 관계가 보다 명확해지고 코드를 더욱 신뢰할 수 있게 만들어준다
+> 클래스 간의 관계가 보다 명확해지고 코드를 더욱 신뢰할 수 있게 만들어준다.
 
 
 ### 1.5 Object 클래스 - 모든 클래스의 조상
@@ -79,12 +87,14 @@ Object 클래스는 모든 클래스 상속계층도의 최상위에 있는 조�
 <br />
 다른 클래스로부터 상속 받지 않는 모든 클래스들은 자동적으로 Object 클래스를 상속 받는다.
 
-    컴파일러가 자동으로 extends Object 추가 
-    (이미 어떤 클래스로부터 상속받도록 작성된 클래스에 대해서는 컴파일러가 `extends Object` 추가하지 않는다.)
-    
-    class Tv extends Object {
-        ...
-    }
+```java
+컴파일러가 자동으로 extends Object 추가 
+(이미 어떤 클래스로부터 상속받도록 작성된 클래스에 대해서는 컴파일러가 `extends Object` 추가하지 않는다.)
+
+class Tv extends Object {
+...
+}
+```
 
 Object 클래스에는 toString(), equals()와 같은 모든 인스턴스가 가져야 할 기본적인 11개의 메서드가 정의되어 있다.
 
@@ -108,9 +118,9 @@ Object 클래스에는 toString(), equals()와 같은 모든 인스턴스가 가
 
 #### 제한된 조건 하에서만 다르게 변경할 수 있다.
 
-> 1. 접근 제어자는 조상 클래스의 메서드보다 `좁은 범위로 변경 할 수 없다`.
-> 2. 예외는 조상 클래스의 메서드보다 많이 선언할 수 없다.
-> 3. 인스턴스 메서드를 static 메서드로 또는 그 반대로 변경할 수 없다.
+1. 접근 제어자는 조상 클래스의 메서드보다 `좁은 범위로 변경 할 수 없다`.
+2. 예외는 조상 클래스의 메서드보다 많이 선언할 수 없다.
+3. 인스턴스 메서드를 static 메서드로 또는 그 반대로 변경할 수 없다.
 
 #### Q. 조상 클래스에 정의된 static 메서드를 자손 클래스에서 똑같은 이름의 static 메서드로 정의할 수 있나?
 
@@ -134,7 +144,7 @@ class Parent {
 }
 
 class Child extends Parent {
-	int x = 20;
+int x = 20;
 
 	void print() {
 		System.out.println("this.x = " + this.x);    // 20
@@ -280,19 +290,21 @@ public : 접근 제한이 없다.
 
 ### 4.6 제어자(modifier)의 조합
 
-    1. 메서드에 static과 abstract를 함께 사용할 수 없다.
-    static 메서드는 몸통이 있는 메서드만 사용할 수 있기 때문이다.
-    
-    2. 클래스에 abstract와 final을 동시에 상용할 수 없다.
-    클래스에 사용되는 final은 클래스를 확장할 수 없다는 의미이고, 
-    abstract는 상속을 통해서 완성되어야 한다는 의미이므로 서로 모순되기 때문이다.
-    
-    3. abstract 메서드의 접근 제어자가 private일 수 없다.
-    abstract 메서드는 자손 클래스에서 구현해주어야 하는데 접근 제어자가 private이면, 
-    자손 클래스에서 접근할 수 없기 때문이다.
-    
-    4. 메서드에 private과 final을 같이 사용할 필요는 없다.
-    접근 제어자가 private인 메서드는 오버라이딩 될 수 없기 때문이다. 이 둘 중 하나만 사용해도 의미가 충분하다.
+```
+1. 메서드에 static과 abstract를 함께 사용할 수 없다.
+static 메서드는 몸통이 있는 메서드만 사용할 수 있기 때문이다.
+
+2. 클래스에 abstract와 final을 동시에 상용할 수 없다.
+클래스에 사용되는 final은 클래스를 확장할 수 없다는 의미이고, 
+abstract는 상속을 통해서 완성되어야 한다는 의미이므로 서로 모순되기 때문이다.
+
+3. abstract 메서드의 접근 제어자가 private일 수 없다.
+abstract 메서드는 자손 클래스에서 구현해주어야 하는데 접근 제어자가 private이면, 
+자손 클래스에서 접근할 수 없기 때문이다.
+
+4. 메서드에 private과 final을 같이 사용할 필요는 없다.
+접근 제어자가 private인 메서드는 오버라이딩 될 수 없기 때문이다. 이 둘 중 하나만 사용해도 의미가 충분하다.
+```
 
 
 ## 5. 다형성 (polymorphism)
@@ -313,15 +325,15 @@ public : 접근 제한이 없다.
 서로 상속관계에 있는 클래스 사이에서만 형변환 가능하다.
 
 ```java
-    자손타입 => 조상타입(Up-casting) : 형변환 생략가능
-    자손타입 <= 조상타입(Down-casting) : 형변환 생략불가
-    
-    Car car = null;
-    FireEngine fe = new FireEngine();
-    FireEngine fe2 = null;
-    
-    car = fe;  // 업캐스팅
-    fe2 = (FireEngine)car;  // 다운캐스팅
+자손타입 => 조상타입(Up-casting) : 형변환 생략가능
+자손타입 <= 조상타입(Down-casting) : 형변환 생략불가
+
+Car car = null;
+FireEngine fe = new FireEngine();
+FireEngine fe2 = null;
+
+car = fe;  // 업캐스팅
+fe2 = (FireEngine)car;  // 다운캐스팅
 ```
 
 Car타입의 참조변수 c를 Car타입의 조상인 Object타입의 참조변수로 형변환 하는 것은 `참조변수가 다룰 수 있는 멤버의 개수가 실제 인스턴스가 갖고 있는 멤버의 개수보다 적을 것이 분명`하므로 문제가 되지 않는다. 그래서 형변환을 생략할 수 있다.
@@ -360,9 +372,9 @@ Car타입의 참조변수 c를 Car타입의 조상인 Object타입의 참조변�
 추상클래스로 인스턴스를 생성할 수 없다. 추상 클래스는 상속을 통해서 자손 클래스에 의해서만 완성될 수 있다.
 
 ```java
-    abstract class 클래스 이름 {
-        ...
-    }
+abstract class 클래스 이름 {
+...
+}
 ```
 
 추상 메서드를 포함하고 있지 않은 클래스에도 키워드 'abstract'를 붙여서 추상클래스로 지정할 수 있다.
@@ -372,23 +384,29 @@ Car타입의 참조변수 c를 Car타입의 조상인 Object타입의 참조변�
 
 선언부만 작성하고 구현부는 작성하지 않은 채로 남겨둔 것이 추상 메서드이다. 
 
-    /* 주석을 통해 어떤 기능을 수행할 목적으로 작성하였는지 설명한다. */
-    abstract 리턴 타입 메서드 이름();
+```
+/* 주석을 통해 어떤 기능을 수행할 목적으로 작성하였는지 설명한다. */
+abstract 리턴 타입 메서드 이름();
+```
 
 추상 클래스로부터 상속받는 자손 클래스는 오버라이딩을 통해 조상인 추상 클래스의 `추상 메서드를 모두 구현`해주어야 한다.
 
 
 ### 6.3 추상 클래스의 작성
 
-    '추상'의 사전적 의미
-    낱낱의 구체적 표상이나 개념에서 공통된 성질을 뽑아 이를 일반적인 개념으로 파악하는 정신 작용.
+```
+'추상'의 사전적 의미
+낱낱의 구체적 표상이나 개념에서 공통된 성질을 뽑아 이를 일반적인 개념으로 파악하는 정신 작용.
+```
 
 `추상화` 는 기존의 클래스의 공통 부분을 뽑아내서 조상 클래스를 만드는 것이다.
 <br />
 상속 계층도를 따라 내려갈수록 클래스는 점점 기능이 추가되어 `구체화의 정도가 심해지며`, 상속 계층도를 따라 올라갈수록 클래스는 `추상화의 정도가 심해진다`.
 
-    추상화 — 클래스간의 공통점을 찾아내서 공통의 조상을 만드는 작업
-    구체화 — 상속을 통해 클래스를 구현, 확장하는 작업
+```
+추상화 — 클래스간의 공통점을 찾아내서 공통의 조상을 만드는 작업
+구체화 — 상속을 통해 클래스를 구현, 확장하는 작업
+```
 
 `abstract를 붙여서 추상 메서드로 선언하는 이유는 자손 클래스에서 추상 메서드를 반드시 구현하도록 강요하기 위해서`이다.
 
@@ -475,13 +493,13 @@ class 클래스이름 implements 인터페이스이름 {
   - 클래스의 선언과 구현을 분리시킬 수 있다. 클래스와 클래스간의 직접적인 관계를 인터페이스를 이용해서 간접적인 관계로 변경하면, 한 클래스의 변경이 관련된 다른 클래스에 영향을 미치지 않는 독립적인 프로그래밍이 가능하다.
 
 ```java
-  interface Repairable { }
+interface Repairable { }
 
-  class SCV extends GroundUnit implements Repairable { //... }
+class SCV extends GroundUnit implements Repairable { //... }
 
-  class Tank extends GroundUnit implements Repairable { //... }
+class Tank extends GroundUnit implements Repairable { //... }
 
-  class Dropship extends AirUnit implements Repairable { //... }
+class Dropship extends AirUnit implements Repairable { //... }
 ```
 
   위 3개의 클래스에는 같은 인터페이스를 구현했다는 공통점이 생겼다. 메서드의 매개변수로 Repairable 인터페이스를 구현한 클래스의 인스턴스만 받아들여질 것이다. void repair(Repairable r) { // 매개변수로 넘겨받은 유닛을 수리한다. }
