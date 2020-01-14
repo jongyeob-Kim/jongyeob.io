@@ -65,6 +65,8 @@ description: "2020년의 독서 목록"
           - [x] 2020-01-13 얕은 복사와 깊은 복사
           - [x] 2020-01-13 getClass()
           - [x] 2020-01-13 Class 객체를 얻는 방법
+      - [x] 2020-01-14 String 클래스
+      - [x] 2020-01-14 StringBuffer 클래스와 StringBuilder 클래스
 
 
 ### TopCoder 알고리즘 트레이닝
