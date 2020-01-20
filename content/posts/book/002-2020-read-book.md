@@ -55,7 +55,7 @@ description: "2020년의 독서 목록"
    - [x] 2020-01-12 예외 되던지기 (Exception re-throwing)
    - [x] 2020-01-12 연결된 예외 (Chained exception)
 - Chapter 09. java.lang 패키지와 유용한 클래스
-   - java.lang 패키지
+   - 1\.java.lang 패키지
       - Object 클래스
           - [x] 2020-01-13 equals(Object obj)
           - [x] 2020-01-13 hashCode()
@@ -67,6 +67,16 @@ description: "2020년의 독서 목록"
           - [x] 2020-01-13 Class 객체를 얻는 방법
       - [x] 2020-01-14 String 클래스
       - [x] 2020-01-14 StringBuffer 클래스와 StringBuilder 클래스
+      - [x] 2020-01-15 Math 클래스
+      - [x] 2020-01-15 래퍼(wrapper) 클래스
+   - 2\. 유용한 클래스
+      - [x] 2020-01-19 java.util.Objects 클래스
+      - [x] 2020-01-19 java.util.Random 클래스
+      - [x] 2020-01-19 정규식(Regular Expression)-java.util.regex 패키지
+      - [x] 2020-01-20 java.util.Scanner 클래스
+      - [x] 2020-01-20 java.util.StringTokenizer 클래스
+      - [x] 2020-01-20 java.math.BigInteger 클래스
+      - [x] 2020-01-20 java.math.BigDecimal 클래스
 
 
 ### TopCoder 알고리즘 트레이닝
