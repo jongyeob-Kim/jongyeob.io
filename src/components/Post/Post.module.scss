@@ -6,11 +6,15 @@
     max-width: $layout-post-width;
     margin: 0 auto;
     padding: 0 15px;
+    border-bottom: 1px solid $color-gray-border;
   }
 
   &__comments {
     max-width: $layout-post-width;
     margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 25px;
+    margin-bottom: 50px;
     padding: 0 15px;
   }
 
