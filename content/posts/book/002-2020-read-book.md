@@ -11,7 +11,7 @@ tags:
 description: "2020년의 독서 목록"
 ---
 
-- [ ] [자바의 정석 1](#자바의-정석-1)
+- [x] [자바의 정석 1](#자바의-정석-1)
 - [ ] [자바의 정석 2](#자바의-정석-2)
 - [ ] [윤성우의 열혈 자료구조](#윤성우의-열혈-자료구조)
 - [ ] [Head First Design Patterns](#Head-First-Design-Patterns)
@@ -77,6 +77,26 @@ description: "2020년의 독서 목록"
       - [x] 2020-01-20 java.util.StringTokenizer 클래스
       - [x] 2020-01-20 java.math.BigInteger 클래스
       - [x] 2020-01-20 java.math.BigDecimal 클래스
+
+
+### 자바의 정석 2
+
+- Chapter 10. 날짜와 시간 & 형식화
+   - 1\. 날짜와 시간
+      - [x] 2020-01-21 Calendar와 Date
+   - 2\. 형식화 클래스
+      - [x] 2020-01-21 DecimalFormat
+      - [x] 2020-01-21 SimpleDateFormat
+      - [x] 2020-01-21 ChoiceFormat
+      - [x] 2020-01-21 MessageFormat
+   - 3\. java.time 패키지
+      - [x] 2020-01-23 java.time 패키지의 핵심 클래스
+      - [x] 2020-01-23 LocalDate와 LocalTime
+      - [x] 2020-01-23 Instant
+      - [x] 2020-01-23 LocalDateTime과 ZonedDateTime
+      - [x] 2020-01-23 TemporalAdjusters
+      - [x] 2020-01-23 Period와 Duration
+      - [x] 2020-01-23 파싱과 포맷
 
 
 ### TopCoder 알고리즘 트레이닝
