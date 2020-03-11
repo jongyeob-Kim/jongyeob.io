@@ -114,7 +114,7 @@ Blt 클래스에서 cost() 메소드를 오버라이드 하고, 부모 클래스
 
 ![적용 설계](/media/013-decorator-pattern-3.jpg)
 
-Topping은 데코레이터(햄, 베이컨 등)의 부모 클래스이다. 또한 Topping 클래스가 Sandwich 클래스를 확장한 이유는 데코레이터 객체가 감사고 있는 객체와 `형식을 맞추기 위함`이다. 결국 메뉴와 토핑 객체는 Sandwich라는 동일한 형식을 지니고 있기 때문에 메뉴에 어떤 토핑이든 얹을 수 있게 되는 것이다.
+SandwichTopping 데코레이터(햄, 베이컨 등)의 부모 클래스이다. 또한 SandwichTopping 클래스가 Sandwich 클래스를 확장한 이유는 데코레이터 객체가 감사고 있는 객체와 `형식을 맞추기 위함`이다. 결국 메뉴와 토핑 객체는 Sandwich라는 동일한 형식을 지니고 있기 때문에 메뉴에 어떤 토핑이든 얹을 수 있게 되는 것이다.
 
 데코레이터인 햄, 베이컨, 치즈가 Blt를 감싸고 있는 그림이다. 
 
@@ -150,14 +150,14 @@ public class Blt extends Sandwich {
 ```
 
 ```java
-// Topping 추상 클래스
-public abstract class Topping extends Sandwich {
+// SandwichTopping 추상 클래스
+public abstract class SandwichTopping extends Sandwich {
   // 서브 클래스에서 구현 강제
   public abstract String getDescription();
 }
 
 // 토핑 햄 클래스
-public class Ham extends Topping {
+public class Ham extends SandwichTopping {
   private Sandwich sandwich;
 
   public Ham(Sandwich sandwich) {
@@ -176,7 +176,7 @@ public class Ham extends Topping {
 }
 ```
 
-햄, 베이컨, 치즈, 토마토 이외에 토핑이 추가되면 Topping 클래스를 상속하여 구현할 수 있다. 또한, 메뉴나 토핑에 변경이 일어나도 연관된 클래스를 수정하는 일은 발생하지 않는다.
+햄, 베이컨, 치즈, 토마토 이외에 토핑이 추가되면 SandwichTopping 클래스를 상속하여 구현할 수 있다. 또한, 메뉴나 토핑에 변경이 일어나도 연관된 클래스를 수정하는 일은 발생하지 않는다.
 
 실제로 데코레이터를 런타임에 어떻게 적용하는지 테스트 코드를 통해 확인해보자.
 
