@@ -6,7 +6,8 @@ draft: false
 slug: "/posts/network/book/network-more-easily/ch02-lan-beginner"
 category: "네트워크"
 tags:
-  - "네트워크", "OSI 7 Layer"
+  - "네트워크"
+  - "OSI 7 Layer"
 description: "컴퓨터 통신의 프로토콜은 ISO(International Organization for Standardization, 국제 표준화기구)에서 추진하는 OSI(Open System Interconnection, 개방형 시스템 간 상호 접속)로 설계 방침이 정해져 있다."
 ---
 
